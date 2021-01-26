@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Form Example 1</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+  <form name="mainFrom" onsubmit="return false">
+
+    <fieldset id="custInfo">
+      <legend>Customer Information</legend>
+
+      <label for="custname"> Name:</label>
+      <input name="custname" id="custname" placeholder="first and last name" type="text" />
+
+      <br><br>
+
+      <label for="city">City:</label>
+      <input name="city" id="city" placeholder="city" type="text" />
+      <br><br>
+
+      <label for="payment">Payment Preference:</label>
+      <select name="payment" id="payment" size="1">
+        <option value="Cash"> Cash</option>
+        <option value="VisaMC">Visa or MC</option>
+        <option value="Debit"> Debit</option>
+      </select>
+
+      <br><br>
+      <input type="submit" value="Submit" id = "sub">
+
+    </fieldset>
+
+    <fieldset id="customers">
+      <legend>My Customers</legend>
+
+    <ul id = "list">
+
+    </ul>
+    
+
+    </fieldset>
+
+  </form>
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
